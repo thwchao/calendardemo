@@ -141,6 +141,7 @@ public class Calendar2 extends LinearLayout implements View.OnClickListener {
                 holder.itemView.setTextColor(Color.DKGRAY);
             }else {
                 if(date.getYear()+1900==Calendar.getInstance().get(Calendar.YEAR)&&date.getMonth()==Calendar.getInstance().get(Calendar.MONTH)&&date.getDate()==Calendar.getInstance().get(Calendar.DATE)){
+                    System.out.println(Calendar.getInstance().getTime());
                     holder.itemView.setToday(true);
                 }else{
                     holder.itemView.setTextColor(Color.BLACK);
