@@ -94,7 +94,6 @@ public class Calendar2 extends LinearLayout implements View.OnClickListener {
         int predays = weekDay-1;
         calendar.add(Calendar.DAY_OF_MONTH,-predays);
         mdates.clear();
-        //要显示的时间
         for(;mdates.size()<MAXDATENUM;){
             DateItem item = new DateItem();
             calendar.add(Calendar.DAY_OF_MONTH,1);
